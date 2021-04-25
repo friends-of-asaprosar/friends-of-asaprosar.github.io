@@ -1,4 +1,6 @@
-# Required features for the new software
+# Ideas for the new system
+
+This is a page for all the ideas I had while exploring the current version of REIMS. Most of them are just nice-to-have and could be done after the rewrite as a QOL improvement.
 
 - Split the application into features:
 
@@ -8,6 +10,6 @@
 
 - Two kinds of prescriptions (Rx): readers & glasses
 
-- QR Code (printing) feature in the future?
+- QR Code and prescription printing feature?
 
 ## Database design
