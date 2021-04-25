@@ -5,6 +5,6 @@ nav_order: 1
 permalink: /
 ---
 
-# Technical docs for the REIMS project of ASAPROSAR
+# Technical docs for the REIMS2 project
 
 This is test text that'll be replaced in the future.
