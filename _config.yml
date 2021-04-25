@@ -29,6 +29,13 @@ github_username: friends-of-asaprosar
 remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
+
+aux_links:
+  "Friends of Asaprosar Website":
+    - "https://friendsofasaprosar.org/"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: false
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
