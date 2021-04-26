@@ -16,3 +16,4 @@ So I don't forget those in the requirement analysis
 - New Donations are only entered between the annual visits right? You usually don't need to enter glasses while you're in other countries?
 - Do you (or the other orgs using the software) have good internet connections where you work/dispense the glasses?
 - I already understood that the ability to enter new data "simultaneously" into the database is pretty important for you?
+- Security concept: Is it okay for the data to be publically available? In any case, a write account is neccessary
