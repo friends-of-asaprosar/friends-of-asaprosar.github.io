@@ -3,42 +3,48 @@ title: Requirements
 parent: Planning
 ---
 
-# Requirements for the new system
+# Requirements
 
-## User stories
+## General / other
 
-### Process on site
+- System might be reused from other initiatives in the world, so it's preferred to make the branding customizable and the code easy to setup & modular
 
-#### Process description
+## Backend
 
-Patient with bad sight visits the clinc in El Salvador and in best case leaves with matching glasses.
+- Data has to be write-protected
 
-1. Check-up by a doctor, who measures eye sight
-   - most time-consuming task here
-2. If glasses are deemed neccessary, they get a sheet of paper with their Rx/diagnosis written on it
-   - Rx means Prescription means which type of glasses are required (more on the exact required types below)
-3. Patient proceeds to the next station, where he gives his Rx to the computer person
-4. Rx is entered into the program (mostly with a USB numpad only). The program outputs the 3 best fitting glasses and their SKU (serial number).
-5. Some other guy fetches the 3 glasses from the storage. The glasses are sorted by SKU in boxes.
-   - Meanwhile, the computer person might repeat step 4 for other patients simultanously, so other guys can fetch their best matching glasses as in step 5 simultanously
-6. The patient tries out the 3 glasses and pick their favorite. They leave the clinic with the glasses.
-7. The empty plastic bag, which the glasses were in, is stored in a seperate "dispensed" container. The computer person records them as "dispensed" in the DB as soon as he has some time inbetween.
+  - Read is not that important, since there is no personal data
+  - Login via Google Account or other 3rd parties would be okay
 
-### Back in America
+### Data format
 
-#### Process description
+_See PDF "Working with REIMS to find glasses" for a detailled explanation_
 
-A person in America has to refill the glasses inventory.
+Shorthand explanation:
 
-1. The donated glasses from all over America are collected. Glasses are cleaned and measured. All glasses are stored in a plastic bag with the measured Rx written on them. Those glasses are not yet recorded inside the DB, as it'd be too tedious to enter all of those in a DB.
-2. They analyze what glasses are currently in inventory and what glasses should be preferred for refill.
-   - This is done by manual analysis of the dispensed and current glasses with excel, combined with their knowledge about the most common Rx's. More on that later.
-3. They pick new glasses for entering to inventory and enter them into the program (mostly with a USB numpad only).
-   - It should be possible to do this step and the next one with multiple people simultanously all over America.
-4. The program outputs the selected SKU and the person writes it also on the plastic bag.
-   - The SKU is selected simply by the next free slot, which was open after the dispensing in the last campaign.
-5. This process is repeated until all 10k glasses are refilled again.
+- Rx = Prescription = A pair of glasses descriped by its parameters like strength and others
+- OD = right eye
+- OS = left eye
+- Readers = glasses with near vision only (i.e. only two parameters for strengths of both eyes)
 
-## Questions
+Data for every Rx:
 
-1. Is it required to manually delete glasses from inventory sometimes back in America?
+- _Type_, can be single (standard glasses), bifocal (single, but with a different lens power at the bottom) or progressive (bifocal, but with a smooth transition. German: "Gleitsichtbrille"). In the future, reader (simple reading glasses with _Sphere_ only should be possible as well).
+- _Size_, can be small, medium, large, child
+- _Appearance_, can be "neutral", "feminine" or "masculine"
+- _Material_, optional, can be metal or plastic
+
+The following data is stored for **each** eye:
+
+- _Sphere_/lens power in diopters. Negative numbers means near sighted, positive is far sighted. Range from -20 to +20 in 0.25 increments.
+- _Cylinder_: Lens power to correct astigmatism (German: "Hornhautverkrümmung"). Range from 0 to -6 in 0.25 increments.
+- _Axis_: Also some value to correct astigmatism. Range from 1 to 180 in 1 increments.
+- _Add_: **only for bifocal or progressive lenses**, this described the lens power of the additional bottom lens. Range from 0.25 to 4 in 0.25 increments.
+
+_Program should round to the increments automatically._
+
+## Frontend
+
+- Everything should be usable via keyboard/numpad only as it's the current workflow.
+- The current sequence (of tabbing) fields should be kept.
+- Mobile usage is not required, since numpad is much faster.

@@ -1,23 +1,24 @@
 ---
-title: Idea collection
+title: Notes & ideas
 parent: Planning
 ---
 
-# Ideas and notes for the new system
+This is a page for meeting notes and all the ideas I had while exploring the current version of REIMS.
 
-This is a page for all the ideas I had while exploring the current version of REIMS. Most of them are just nice-to-have and could be done after the rewrite as a QOL improvement.
+# Open Questions
 
-- Split the application into features:
+1. Is it required to manually delete glasses from inventory sometimes back in America?
+2. Is viewing and sorting the full inventory required in America or on site or both?
 
-  - Entering new Rx (online connection required),
-  - Searching & dispensing (must work without full connection)
-  - Generating reports after a campaign (maybe Grafana or sth like that)
+# Ideas
 
-- Two kinds of prescriptions (Rx): readers & glasses
+Most of them are just nice-to-have and could be done after the rewrite as a QOL improvement.
 
+- Lens measuring is done with digital devices as well, so it would be nice to automatically import it from there
 - QR Code and prescription printing feature?
+- Use Grafana for reports!
 
-# Meeting notes
+# Meeting notes 28.04.21
 
 - bifocal = gleichsichtbrille
 - progressive = no line bifocal (gleitsicht mit verlauf)
@@ -62,13 +63,8 @@ This is a page for all the ideas I had while exploring the current version of RE
 
 ## report
 
-- see excel
-- export to excel for analysis
-- inbetween on site and entering
 - nothing for PR purporses, nice to have
 - mostly diane as well
-
-- backups
 
 - read only would be arlight, but write protection
 
