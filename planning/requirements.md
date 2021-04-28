@@ -5,30 +5,40 @@ parent: Planning
 
 # Requirements for the new system
 
-TODO: A big chunck of text and diagrams to explain what features are important and what use cases should be covered.
+## User stories
 
-## Use cases
+### Process on site
 
-1. Entering new Rx
+#### Process description
 
-   - New Donations are only entered between the annual visits right? You usually don't need to enter glasses while you're in other countries?
-   - Who does this? How are SKUs allocated/shared?
-   - What types of glasses exist and which attrs to they have? Difference between readers & normal glasses? And do you use/need the readers feature currently?
-   - Is it done by keyboard only? How are glasses measured (digitally)?
-   - What does the reusing feature do? Why are some of the SKUs prefixed with R and a number? Is there a reason why it's limited to 10k?
+Patient with bad sight visits the clinc in El Salvador and in best case leaves with matching glasses.
 
-2. Matching glasses on site (and dispensing them)
+1. Check-up by a doctor, who measures eye sight
+   - most time-consuming task here
+2. If glasses are deemed neccessary, they get a sheet of paper with their Rx/diagnosis written on it
+   - Rx means Prescription means which type of glasses are required (more on the exact required types below)
+3. Patient proceeds to the next station, where he gives his Rx to the computer person
+4. Rx is entered into the program (mostly with a USB numpad only). The program outputs the 3 best fitting glasses and their SKU (serial number).
+5. Some other guy fetches the 3 glasses from the storage. The glasses are sorted by SKU in boxes.
+   - Meanwhile, the computer person might repeat step 4 for other patients simultanously, so other guys can fetch their best matching glasses as in step 5 simultanously
+6. The patient tries out the 3 glasses and pick their favorite. They leave the clinic with the glasses.
+7. The empty plastic bag, which the glasses were in, is stored in a seperate "dispensed" container. The computer person records them as "dispensed" in the DB as soon as he has some time inbetween.
 
-   - Who does this? How are people measured? What does their exact workflow look like? How is the dispensing feature used?
-   - Is the algorithm available/public?
-   - Should it be done simultanously? Is it advantagous to enter it via mobile?
-   - Internet connection?
+### Back in America
 
-3. Generate reports (after a campaign)
+#### Process description
 
-   - What numbers are important? Is this feature only used after a campaign?
-   - Who does this?
+A person in America has to refill the glasses inventory.
 
-4. General stuff
+1. The donated glasses from all over America are collected. Glasses are cleaned and measured. All glasses are stored in a plastic bag with the measured Rx written on them. Those glasses are not yet recorded inside the DB, as it'd be too tedious to enter all of those in a DB.
+2. They analyze what glasses are currently in inventory and what glasses should be preferred for refill.
+   - This is done by manual analysis of the dispensed and current glasses with excel, combined with their knowledge about the most common Rx's. More on that later.
+3. They pick new glasses for entering to inventory and enter them into the program (mostly with a USB numpad only).
+   - It should be possible to do this step and the next one with multiple people simultanously all over America.
+4. The program outputs the selected SKU and the person writes it also on the plastic bag.
+   - The SKU is selected simply by the next free slot, which was open after the dispensing in the last campaign.
+5. This process is repeated until all 10k glasses are refilled again.
 
-   - Security concept: Is it okay for the data to be publically available? In any case, a write account is neccessary? How to add new write users?
+## Questions
+
+1. Is it required to manually delete glasses from inventory sometimes back in America?
