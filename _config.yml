@@ -31,7 +31,7 @@ plugins:
   - jekyll-feed
 
 aux_links:
-  "Friends of Asaprosar Website":
+  "Official Website":
     - "https://friendsofasaprosar.org/"
 
 # Makes Aux links open in a new tab. Default is false

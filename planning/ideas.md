@@ -3,7 +3,7 @@ title: Idea collection
 parent: Planning
 ---
 
-# Ideas for the new system
+# Ideas and notes for the new system
 
 This is a page for all the ideas I had while exploring the current version of REIMS. Most of them are just nice-to-have and could be done after the rewrite as a QOL improvement.
 
