@@ -28,7 +28,7 @@ nav_order: 2
 
 ## Data format
 
-_See PDF [Working with REIMS to find glasses]({% link /assets/working-with-reims.pdf %}) for a detailled explanation_
+_See [Working with REIMS to find glasses]({% link /assets/working-with-reims.pdf %}) (PDF) for a detailled explanation_
 
 Data for every entry:
 
@@ -56,6 +56,10 @@ Entering data:
 
 - Return SKU after data entry so that it's easier to implement the backend no duplicates logic.
 - Round to the data increments automatically.
+
+Matching data:
+
+- [Philscore Breakdown]({% link /assets/philscore-breakdown.pdf %}) (PDF)
 
 ## General / other
 

@@ -4,7 +4,7 @@ nav_order: 2
 
 # Analysis of the old system
 
-REIMS can be donwloaded from [here](www.asaprosar.org/our-impact/visual-health/).
+REIMS can be donwloaded from [here](www.asaprosar.org/our-impact/visual-health/). Especially interesting is the [manual]({% link /assets/reims-manual.pdf %}) (PDF).
 
 It's possible to run it inside VirtualBox Windows 95, which can be downloaded from [here](https://archive.org/details/windows_95_vdi).
 It's important to follow the instructions in the reviews on that page to get it to run.
