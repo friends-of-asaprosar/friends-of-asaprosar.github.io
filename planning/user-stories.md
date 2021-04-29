@@ -6,7 +6,7 @@ nav_order: 1
 
 # User stories
 
-- Rx = Prescription = A pair of glasses descriped by its parameters like strength and others
+Rx = Prescription = A pair of glasses descriped by its parameters like strength and others
 
 ## Process on site
 

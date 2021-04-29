@@ -28,7 +28,7 @@ nav_order: 2
 
 ## Data format
 
-_See PDF "Working with REIMS to find glasses" for a detailled explanation_
+_See PDF [Working with REIMS to find glasses]({% link /assets/working-with-reims.pdf %}) for a detailled explanation_
 
 Data for every entry:
 
