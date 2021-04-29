@@ -1,6 +1,6 @@
 ---
 title: Notes & ideas
-parent: Planning
+nav_order: 20
 ---
 
 This is a page for meeting notes and all the ideas I had while exploring the current version of REIMS.

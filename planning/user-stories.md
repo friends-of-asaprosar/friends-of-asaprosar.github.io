@@ -1,6 +1,7 @@
 ---
 title: User stories
 parent: Planning
+nav_order: 1
 ---
 
 # User stories
