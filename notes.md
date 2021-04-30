@@ -9,6 +9,8 @@ This is a page for meeting notes and all the ideas I had while exploring the cur
 
 1. Is it required to manually delete glasses from inventory sometimes back in America?
 2. Is viewing and sorting the full inventory required in America or on site or both?
+3. Are only optometrists using the software? Should there be explanations?
+4. Dark or light theme?
 
 # Ideas
 
@@ -17,6 +19,8 @@ Most of them are just nice-to-have and could be done after the rewrite as a QOL 
 - Lens measuring is done with digital devices as well, so it would be nice to automatically import it from there
 - QR Code and prescription printing feature?
 - Use Grafana for reports!
+- Handwrite OCR with mobile phone for entering glasses
+- Administration panel for adding new accounts
 
 # Meeting notes 28.04.21
 

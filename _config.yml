@@ -32,8 +32,10 @@ plugins:
   - jekyll-feed
 
 aux_links:
-  "Official Website":
+  "Organization Website":
     - "https://friendsofasaprosar.org/"
+  "REIMS2 frontend":
+    - "http://reims2.duckdns.org/"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
