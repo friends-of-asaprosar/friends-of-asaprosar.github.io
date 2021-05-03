@@ -7,10 +7,14 @@ This is a page for meeting notes and all the ideas I had while exploring the cur
 
 # Open Questions
 
-1. Is it required to manually delete glasses from inventory sometimes back in America?
-2. Is viewing and sorting the full inventory required in America or on site or both?
+1. Is viewing and sorting the full inventory required in America or on site or both?
+  - Onsite: Is sorting relevant? Is manual filtering relevant?
+  - America: Sorting? Filtering (only for SKU?)? Grouping?
+2. Editing (and deleting) data in America important? How does it currently work (via table search and then edit or via SKU entering)?
 3. Are only optometrists using the software? Should there be explanations?
-4. Dark or light theme?
+4. Domain name?
+5. More details on PhilScore algorithm, best case source code
+6. Keyboard usage: Tab to switch fields or enter? Shortcuts?
 
 # Ideas
 
