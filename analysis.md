@@ -17,7 +17,7 @@ To run it extract all REIMS zips into **one** folder, because some of the ZIPs c
 
 Luckily the database extraction is pretty easy thanks to the python `dbfread` library.
 
-The source code of the extractor can be found [here](https://github.com/friends-of-asaprosar/reims_dbf_extractor)
+The source code of the extractor can be found [here](https://github.com/reims2/reims_dbf_extractor)
 
 An overview over all DBF files from REIMS:
 
