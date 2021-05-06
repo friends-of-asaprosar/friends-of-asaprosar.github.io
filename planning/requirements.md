@@ -19,10 +19,11 @@ nav_order: 2
 
 ### General considerations
 
+- Support for different locations: There is one site in San Miguel and one in Santa Ana (and that should be extendable in the future). The sites are independet of each other, so they should have different tables / different API endpoints. Optional: currently it's possible to filter by location because one location has all SKUs less than 5000 and the other greater than 5000.
 - Data has to be write-protected
 
   - Read is not that important, since there is no personal data
-  - Login via Google Account or other 3rd parties would be okay
+  - Login via Google Account or other 3rd parties would be okay if it's easier
 
 - It should never be possible to have the same SKU for two active (i.e. non dispensed) glasses.
 
