@@ -37,14 +37,13 @@ Data for every entry:
 - `Type` can be single (standard glasses), bifocal (single, but with a different lens power at the bottom) or progressive (bifocal, but with a smooth transition. German: "Gleitsichtbrille"). In the future, reader (simple reading glasses with `Sphere` only should be possible as well).
 - `Size` can be small, medium, large, child
 - `Appearance` can be neutral, feminine or masculine
-- `Material` optional, can be metal or plastic
 
 The following data is stored for **each** eye (OD=right eye, OS=left):
 
 - `Sphere`/lens power in diopters. Negative numbers means near sighted, positive is far sighted. Range from -20 to +20 in 0.25 increments.
-- `Cylinder` Lens power to correct astigmatism (German: "Hornhautverkrümmung"). Range from 0 to -6 in 0.25 increments.
+- `Cylinder` Lens power to correct astigmatism (German: "Hornhautverkrümmung"). Range from 0 to -6 in 0.25 increments => Negative only
 - `Axis` Also some value to correct astigmatism. Range from 1 to 180 in 1 increments.
-- `Add` **only for bifocal or progressive lenses**, this described the lens power of the additional bottom lens. Range from 0.25 to 4 in 0.25 increments.
+- `Add` **only for bifocal or progressive lenses**, this described the lens power of the additional bottom lens. Range from 0.25 to 4 in 0.25 increments => Positive only.
 
 ## Frontend
 
@@ -53,15 +52,30 @@ General:
 - Everything should be usable via keyboard/numpad only as it's the current workflow.
 - The current sequence (of tabbing) fields should be kept.
 - Mobile usage is not required, since numpad is much faster.
+- No additional help texts are required (expect for why entered data is incorrect)
+- Tab to switch fields, enter to submit
 
 Entering data:
 
 - Return SKU after data entry so that it's easier to implement the backend no duplicates logic.
-- Round to the data increments automatically.
+- Round to 0.25 increments automatically.
+- Force a plus or minus to be entered for sphere
+- Force axis to be entered with three digits, i.e. zero left padding required
 
 Matching data:
 
 - [Philscore Breakdown]({% link /assets/philscore-breakdown.pdf %}) (PDF)
+
+Viewing data (America **as well as onsite**):
+
+- Sorting table is required
+- Filtering data is required for type and OD/OS sphere+cyl
+- Optionally some export to CSV feature
+
+Report generation
+
+- See [user stories](user-stories.html#inventory-analysis)
+- Export to CSV
 
 ## General / other
 

@@ -8,13 +8,14 @@ This is a page for meeting notes and all the ideas I had while exploring the cur
 # Open Questions
 
 1. Is viewing and sorting the full inventory required in America or on site or both?
-  - Onsite: Is sorting relevant? Is manual filtering relevant?
-  - America: Sorting? Filtering (only for SKU?)? Grouping?
+
+- Onsite: Is sorting relevant? Is manual filtering relevant?
+- America: Sorting? Filtering (only for SKU?)? Grouping?
+
 2. Editing (and deleting) data in America important? How does it currently work (via table search and then edit or via SKU entering)?
 3. Are only optometrists using the software? Should there be explanations?
 4. Domain name?
 5. More details on PhilScore algorithm, best case source code
-6. Keyboard usage: Tab to switch fields or enter? Shortcuts?
 
 # Ideas
 
@@ -80,3 +81,28 @@ Most of them are just nice-to-have and could be done after the rewrite as a QOL 
 
 - administrator,
 - make it comatpible for others
+
+# Meeting notes 07.05.21
+
+- single or multifocal, no seperation
+- sphere + or - required 00.xx (xx are single digits)
+- cyl default to minus one number dot one nmber rounding, (1 decimal)
+- AXIS require three digits (including padding)
+- addition default to +, never negative
+
+- remove material
+
+- sorting is extremely helpful
+- type, od/os cly sphere
+- Rx correct is much more important
+- also have filtering on site
+
+- deleting on site as well because sometimes bags are empty
+- editing in table would be great, if you detect wrong entered glasses, most times on site
+
+- no help text in UI required
+
+- tab to swithc fields
+- philscore explanation will follow
+
+-

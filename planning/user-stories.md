@@ -25,6 +25,16 @@ Patient with bad sight visits the clinc in El Salvador and leaves with matching 
 7. The patient tries out the 3 glasses and picks their favorite. They leave the clinic with their favorite glasses.
 8. The empty plastic bag, which the picked glasses were in, is stored in a seperate "dispensed" container. The computer person records them as "dispensed" in the DB as soon as he has some time inbetween.
 
+### Other things that happen on site
+
+A retrieved SKU bag has been empty.
+
+- The computer person marks the bag as deleted (and not dispensed?), so it can be refilled back in America.
+
+The Rx on the bag is different (because wrong data was entered).
+
+- The computer person directly corrects the Rx in the DB so it's correct in the future
+
 ## Back in America
 
 ### Inventory analysis
