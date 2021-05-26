@@ -7,15 +7,9 @@ This is a page for meeting notes and all the ideas I had while exploring the cur
 
 # Open Questions
 
-1. Is viewing and sorting the full inventory required in America or on site or both?
-
-- Onsite: Is sorting relevant? Is manual filtering relevant?
-- America: Sorting? Filtering (only for SKU?)? Grouping?
-
-2. Editing (and deleting) data in America important? How does it currently work (via table search and then edit or via SKU entering)?
-3. Are only optometrists using the software? Should there be explanations?
-4. Domain name?
-5. More details on PhilScore algorithm, best case source code
+1. Domain name? Who buys it?
+2. Old source code https://github.com/jboreiko/reims-web ?
+3. PhilScore from old source code https://github.com/jboreiko/reims-web/blob/58a412ef6185b83e2b5dde96f5bd800d2fb63ecb/app/records/eyeglassRecords.ts#L151-L172
 
 # Ideas
 

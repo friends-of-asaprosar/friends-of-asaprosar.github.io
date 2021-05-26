@@ -38,8 +38,8 @@ We use Dokku for deploying, because it's very easy and even allows nice stuff li
    dokku network:rebuildall
    # Set the API container name URL for the frontend including the /api prefix
    dokku config:set frontend API_URL=https://api.web:5000/pvh/api/
-   dokku ps:rebuild api
-   dokku ps:rebuild frontend
+   dokku ps:restart api
+   dokku ps:restart frontend
    ```
 5. That's all, REIMS2 is already deployed! To add SSL, do the following on the server:
    ```bash
