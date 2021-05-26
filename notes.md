@@ -9,7 +9,7 @@ This is a page for meeting notes and all the ideas I had while exploring the cur
 
 1. Domain name? Who buys it?
 2. Old source code https://github.com/jboreiko/reims-web ?
-3. PhilScore from old source code https://github.com/jboreiko/reims-web/blob/58a412ef6185b83e2b5dde96f5bd800d2fb63ecb/app/records/eyeglassRecords.ts#L151-L172
+3. Stuff: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6431005/
 
 # Ideas
 
@@ -100,3 +100,51 @@ Most of them are just nice-to-have and could be done after the rewrite as a QOL 
 - philscore explanation will follow
 
 -
+
+# Meeting notes 26.05.21 (PhilScore)
+
+Either
+
+1. Match Sphere +- Tolerance
+2. Match Cyl +- Tolerance
+3. Pass AtoLTF() - unclear what it means: Light Transmission Factor? Doesn't make sense
+
+Or
+
+1. Pass SPEQ()
+
+Then
+
+1. Rank using RANK()
+
+## AtoLTF
+
+Variables: zc (Lens cyl), zac (Lens Axis), za (desired axis)
+
+Calculated: zat (calculated from Lens cylinder, it's some kind of mapping from the lens cyl to axis number range)
+
+Test: Depending on (Lens axis +- desired axis)
+
+Todo visualize!
+
+## SPEQ
+
+Variables: desired Sphere, desired Cylinder (_Axis in theory, but unused_)
+
+Returns: An array of lower and upper bounds for cylinder and sphere values, depending on cylinder??
+
+Calc: cn = lower bound for `n`th pair
+
+sn = upper bound for `n`th pair
+
+As soon as cn is greater null, discard that pair. First pair (cylinder+0.5, sphere-0.25), second (cylinder+1, sphere-0.5), third (cylinder+1.5, sphere-0.75)
+
+**That doesn't seem right!** Upper bounds are less than lower bounds as soon as spheres are negative?
+
+## PhilScore RANK()
+
+Variables: desired sphere, cyl and add for OS and OD, measured sphere, cyl and add for OS and OD
+
+Returns an index based on a lot of conditions
+
+For RANK() see also https://github.com/jboreiko/reims-web/blob/58a412ef6185b83e2b5dde96f5bd800d2fb63ecb/app/records/eyeglassRecords.ts#L151-L172
