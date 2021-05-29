@@ -55,7 +55,7 @@ on cdx files: https://stackoverflow.com/q/3618633/4026792
 
 ## Helpful stuff to know:
 
-- Cylinder and axis are coupled togrether, axis gives rotation. If the cylinder matches but the axis is totally different, that doesn't make sense.
+- Cylinder and axis are coupled together, axis gives rotation. If the cylinder matches but the axis is totally different, that doesn't make sense.
 - You always want to match both eyes, never a single one
 - The "ignore cyl and axis" function is no longer required
 - A prescription can be transformed to another one. That's possible because cylinder abd sphere are coupled together.
